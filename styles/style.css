@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'cake';
+    src: url(../fonts/Cream\ Cake.otf) format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'apple';
+    src: url(../fonts/AppleGaramond-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'macaroni';
+    src: url(../fonts/Macaroni.ttf);
+}
+
+:root{
+    --marrom1:#523427;
+    --cinza:#494949;
+    --marrom2:#956D57;
+    --cinzaClaro:#DBDBDB;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 90vw;
+    height: 100vh;
+    background-color: var(--cinzaClaro);
+}
+
+menu{
+    
+    text-align: center;
+}
+
+.logo{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+menu img{
+    width: 200px;
+    display: inline-flex;
+
+}
+
+.burguer{
+    
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-family: 'cake', sans-serif;
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+.nav{
+    opacity: 0;
+    display: none;
+    width: 100%;
+    z-index: 9999;
+    transition: opacity 1s ease;
+    
+}
+
+.nav a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-family: 'cake', sans-serif;
+    font-size: 2em;
+    color: black;
+    border-bottom: 1px solid black;
+    background-color: var(--cinza);
+    width: 96.8vw;
+
+}
+
+.home-class{
+    padding: 20px;
+    margin-bottom: 150px;
+}
+
+.home-class h1{
+    padding-bottom: 20px;
+}
+
+.home-class p{
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+
+#btn-menu1{
+    padding: 10px 30px 10px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--cinza);
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    color: white;
+    border-bottom-left-radius: 35%;
+    border-top-right-radius: 40%;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.438);
+    cursor: pointer;
+}
+
+#btn-menu1:hover{
+    background: #838386;
+}
+
+#btn-menu1:active{
+    transform: translate(2px, 2px);
+}
+
+.name{
+    color: var(--marrom2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    
+}
+
+#home2{
+    background-color: var(--cinza);
+    width: 96.8vw;
+    height: 500px;
+    position: relative;
+    box-shadow: 1px -3px 8px rgba(0, 0, 0, 0.363);
+}
+
+#home2 img{
+    width: 250px;
+    position: absolute;
+    top: -25%;
+    left: 35%;
+    z-index: 999;
+    border-style: solid;
+    border-image: linear-gradient(to right, black 30%, white ) 1;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.384);
+}
+
+
+
