@@ -29,13 +29,14 @@
 }
 
 body{
-    width: 90vw;
+    
+    width: 96.8vw;
     height: 100vh;
     background-color: var(--cinzaClaro);
 }
 
 menu{
-    
+    height: 24px;
     text-align: center;
 }
 
@@ -46,16 +47,15 @@ menu{
     padding: 20px;
 }
 
-menu img{
+.logo img{
     width: 200px;
     display: inline-flex;
 
 }
 
 .burguer{
-    
+    padding: 10px 0px 10px 0px ;
     cursor: pointer;
-    padding: 10px;
     display: block;
     text-decoration: none;
     font-family: 'cake', sans-serif;
@@ -65,17 +65,23 @@ menu img{
     width: 100%;
 }
 
+.container-nav{
+    overflow-y: hidden;
+}
+
 .nav{
-    opacity: 0;
-    display: none;
+    transform: translateY(-100%);
+    display: block;
     width: 100%;
     z-index: 9999;
     transition: opacity 1s ease;
-    
+    background-color: var(--cinza);
+    transition: 0.3s ease-in;
 }
 
 .nav a {
-    padding: 10px;
+    opacity: 1;
+    padding: 10px 0px 10px 0px;
     display: block;
     text-decoration: none;
     font-family: 'cake', sans-serif;
@@ -83,7 +89,8 @@ menu img{
     color: black;
     border-bottom: 1px solid black;
     background-color: var(--cinza);
-    width: 96.8vw;
+    width: 100%;
+    transition: 0.3s ease-in;
 
 }
 
@@ -131,7 +138,7 @@ menu img{
 
 #home2{
     background-color: var(--cinza);
-    width: 96.8vw;
+    width: 100%;
     height: 500px;
     position: relative;
     box-shadow: 1px -3px 8px rgba(0, 0, 0, 0.363);
