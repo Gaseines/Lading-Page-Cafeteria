@@ -12,14 +12,19 @@
 }
 
 @font-face {
-    font-family: 'macaroni';
-    src: url(../fonts/Macaroni.ttf);
+    font-family: 'title';
+    src: url(../fonts/Butler_Bold.otf);
+}
+
+@font-face {
+    font-family: 'padrao';
+    src: url(../fonts/CaviarDreams.ttf);
 }
 
 :root{
     --marrom1:#523427;
-    --cinza:#494949;
-    --marrom2:#956D57;
+    --cinza:#303539;
+    --marrom2:#A18369;
     --cinzaClaro:#DBDBDB;
 }
 
@@ -32,7 +37,9 @@ body{
     
     width: 100%;
     height: 100vh;
-    background-color: var(--cinzaClaro);
+    background: url(../img/fundo.jpg);
+    background-repeat: repeat;
+    background-size: contain;
 }
 
 menu{
@@ -87,7 +94,7 @@ menu{
     text-decoration: none;
     font-family: 'cake', sans-serif;
     font-size: 2em;
-    color: black;
+    color: var(--cinzaClaro);
     border-bottom: 1px solid black;
     background-color: var(--cinza);
     width: 100%;
@@ -100,8 +107,9 @@ menu{
     margin-bottom: 150px;
 }
 
-.home-class h1{
+.title{
     padding-bottom: 20px;
+    font-family: 'title', serif;
 }
 
 .home-class p{
@@ -130,19 +138,23 @@ menu{
 }
 
 .name{
-    color: var(--marrom2);
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 3px;
     padding-bottom: 10px;
     
 }
 
+.destaque-marrom{
+    color: var(--marrom2);
+}
+
 #home2{
     background-color: var(--cinza);
     width: 100%;
-    height: 500px;
+    height: 450px;
     position: relative;
-    box-shadow: 1px -3px 8px rgba(0, 0, 0, 0.363);
+    box-shadow: 1px -8px 10px rgba(0, 0, 0, 0.281);
 }
 
 #home2 img{
@@ -154,6 +166,124 @@ menu{
     border-style: solid;
     border-image: linear-gradient(to right, black 30%, white ) 1;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.384);
+}
+
+.comentarios{
+    color: #747475;
+}
+
+.comentario-home2{
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 120px;
+    padding: 15px;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.p-home2{
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    
+}
+
+.container-h2-1{
+    padding: 20px 15px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#home2-2{
+    background-color: var(--cinza);
+    width: 100%;
+    
+    text-align: center;
+}
+
+#home2-2 img{
+    width: 250px;
+    border-style: solid;
+    border-image: linear-gradient(to right, black 30%, white ) 1;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.384);
+    
+}
+
+#carrossel-img1{
+    display: none;
+}
+
+#carrossel-img2{
+    display: none;
+}
+
+#carrossel-img3{
+    display: inline;
+}
+
+.tipo-coffee{
+    margin-top: 50px;
+}
+
+.mais-menu{
+    color: white;
+    font-family: 'padrao', sans-serif;
+    text-decoration: underline;
+}
+
+.mais-menu:hover{
+    color: #747475;
+}
+
+.escrita-padrao{
+    color: white;
+    font-family: 'padrao', sans-serif;
+}
+
+.lista-coffee li{
+    font-size: 1.2em;
+    padding: 0px 20px;
+    display: inline;
+}
+
+.lista-coffee i{
+    font-size: 0.4em;
+    color: #747475;
+}
+
+#opc-coffee1{
+    color: var(--marrom2);
+    cursor: pointer;
+    font-family: 'title',serif;
+    text-decoration: none;
+}
+
+#opc-coffee2{
+    color: white;
+    cursor: pointer;
+    font-family: 'title',serif;
+    text-decoration: none;
+}
+
+#opc-coffee3{
+    color: white;
+    cursor: pointer;
+    font-family: 'title',serif;
+    text-decoration: none;
+}
+
+#opc-coffee1:hover{
+    text-decoration: underline;
+
+}
+#opc-coffee2:hover{
+    text-decoration: underline;
+
+}
+#opc-coffee3:hover{
+    text-decoration: underline;
+
 }
 
 
