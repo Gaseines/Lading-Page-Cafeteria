@@ -30,7 +30,7 @@
 
 body{
     
-    width: 96.8vw;
+    width: 97vw;
     height: 100vh;
     background-color: var(--cinzaClaro);
 }
@@ -38,6 +38,7 @@ body{
 menu{
     height: 24px;
     text-align: center;
+    transition: 0.3s ease-in;
 }
 
 .logo{
