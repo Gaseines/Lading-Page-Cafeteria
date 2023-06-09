@@ -32,12 +32,6 @@ function cliqueDireita() {
     const btnCoffee01 = document.getElementById('opc-coffee1');
     const btnCoffee02 = document.getElementById('opc-coffee2');
     const btnCoffee03 = document.getElementById('opc-coffee3');
-    const right = document.getElementById('right');
-    const left = document.getElementById('left');
-
-    let styleimg3 = window.getComputedStyle(img3).display;
-    let styleimg1 = window.getComputedStyle(img1).display;
-    let styleimg2 = window.getComputedStyle(img2).display;
 
     if (window.getComputedStyle(img3).display == 'inline') {
         img3.style.display = 'none';
@@ -65,9 +59,7 @@ function cliqueEsquerda() {
     const btnCoffee02 = document.getElementById('opc-coffee2');
     const btnCoffee03 = document.getElementById('opc-coffee3');
 
-    let styleimg3 = window.getComputedStyle(img3).display;
-    let styleimg1 = window.getComputedStyle(img1).display;
-    let styleimg2 = window.getComputedStyle(img2).display;
+
 
     if (window.getComputedStyle(img3).display == 'inline') {
         img3.style.display = 'none';
@@ -84,6 +76,74 @@ function cliqueEsquerda() {
         img3.style.display = 'inline';
         btnCoffee02.style.color = 'white';
         btnCoffee01.style.color = 'var(--marrom2)';
+    }
+}
+
+
+
+
+
+
+function expressoClick(){
+    const img1 = document.getElementById('carrossel-img1');
+    const img2 = document.getElementById('carrossel-img2');
+    const img3 = document.getElementById('carrossel-img3');
+    const btnCoffee01 = document.getElementById('opc-coffee1');
+    const btnCoffee02 = document.getElementById('opc-coffee2');
+    const btnCoffee03 = document.getElementById('opc-coffee3');
+
+    if(window.getComputedStyle(img3).display == 'inline'){
+        img3.style.display = 'inline'
+    }else{
+        img3.style.display = 'inline'
+        btnCoffee01.style.color = 'var(--marrom2)'
+        img1.style.display = 'none'
+        btnCoffee02.style.color = 'white'
+        img2.style.display = 'none'
+        btnCoffee03.style.color = 'white'
+        
+    }
+}
+
+function cappucinoClick(){
+    const img1 = document.getElementById('carrossel-img1');
+    const img2 = document.getElementById('carrossel-img2');
+    const img3 = document.getElementById('carrossel-img3');
+    const btnCoffee01 = document.getElementById('opc-coffee1');
+    const btnCoffee02 = document.getElementById('opc-coffee2');
+    const btnCoffee03 = document.getElementById('opc-coffee3');
+
+    if(window.getComputedStyle(img1).display == 'inline'){
+        img1.style.display = 'inline'
+    }else{
+        img1.style.display = 'inline'
+        btnCoffee02.style.color = 'var(--marrom2)'
+        img3.style.display = 'none'
+        btnCoffee01.style.color = 'white'
+        img2.style.display = 'none'
+        btnCoffee03.style.color = 'white'
+        
+    }
+}
+
+function arabicaClick(){
+    const img1 = document.getElementById('carrossel-img1');
+    const img2 = document.getElementById('carrossel-img2');
+    const img3 = document.getElementById('carrossel-img3');
+    const btnCoffee01 = document.getElementById('opc-coffee1');
+    const btnCoffee02 = document.getElementById('opc-coffee2');
+    const btnCoffee03 = document.getElementById('opc-coffee3');
+
+    if(window.getComputedStyle(img2).display == 'inline'){
+        img2.style.display = 'inline'
+    }else{
+        img2.style.display = 'inline'
+        btnCoffee03.style.color = 'var(--marrom2)'
+        img1.style.display = 'none'
+        btnCoffee02.style.color = 'white'
+        img3.style.display = 'none'
+        btnCoffee01.style.color = 'white'
+        
     }
 }
 
