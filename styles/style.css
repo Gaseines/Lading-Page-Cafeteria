@@ -227,6 +227,7 @@ menu{
     color: white;
     font-family: 'padrao', sans-serif;
     text-decoration: underline;
+    display: none;
 }
 
 .mais-menu:hover{
@@ -269,6 +270,8 @@ menu{
     font-family: 'title',serif;
     text-decoration: none;
 }
+
+
 
 
 

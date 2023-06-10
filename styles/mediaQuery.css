@@ -103,6 +103,10 @@
         
     }
 
+    .mais-menu{
+        display: block;
+    }
+
     #contato{
         height: 130px;
         padding: 0px 50px;
