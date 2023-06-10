@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 610px) {
+    #burguer{
+        display: none;
+
+    }
+
+    .nav{
+        transform: translateY(0%);
+        display: block;
+        width: 100%;
+        z-index: 9999;
+        transition: opacity 1s ease;
+        background-color: var(--cinza);
+        transition: 0.3s ease-in;
+    }
+}

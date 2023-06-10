@@ -182,6 +182,11 @@ menu{
     text-align: center;
 }
 
+.h2-2-p{
+    padding: 0px 50px;
+
+}
+
 .p-home2{
     font-size: 1.3em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -198,7 +203,7 @@ menu{
 #home2-2{
     background-color: var(--cinza);
     width: 100%;
-    
+    height: 870px;
     text-align: center;
 }
 
@@ -286,19 +291,45 @@ menu{
 
 }
 
+#sobre{
+    padding: 15px;
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+}
 
+.sobre-txt{
+    color: black;
+    font-size: 1.1em;
+    padding: 0px 30px;
+}
 
+.sobre-txt-f{
+    font-weight: bold;
+}
 
+.img-sobre{
+    width: 200px;
+    position: absolute;
+    top: -9%;
+    left: 28%;
+    z-index: 999;
+}
 
+#contato{
+    padding: 20px;
+    background-color: var(--cinza);
+    width: 100%;
+    box-shadow: 1px -8px 10px rgba(0, 0, 0, 0.281);
+    text-align: center;
+}
 
-
-
-
-
-
-
-
-
+#contato ul{
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    font-family: sans-serif;
+}
 
 
 footer{
