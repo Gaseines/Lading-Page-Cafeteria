@@ -1,4 +1,17 @@
 
+function mudouTamanho(){
+    const itens = document.getElementById('navid')
+    if(window.innerWidth >= 610){
+        itens.style.transform = 'translateY(0%)'
+    }else{
+        itens.style.transform = 'translateY(-100%)'
+    }
+}
+
+
+
+
+
 function navMenu(){
     const burguer = document.getElementById('burguer')
     const itens = document.getElementById('navid')

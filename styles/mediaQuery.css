@@ -1,18 +1,120 @@
 @charset "UTF-8";
 
+:root{
+    --marrom1:#523427;
+    --cinza:#303539;
+    --marrom2:#A18369;
+    --cinzaClaro:#DBDBDB;
+}
+
 @media screen and (min-width: 610px) {
     #burguer{
         display: none;
+    }
 
+    .head{
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    menu{
+        text-align: center;
+        transition: none;
+        display: inline;
+    }
+
+    .container-nav{
+        display: inline;
     }
 
     .nav{
         transform: translateY(0%);
-        display: block;
+        display: inline;
         width: 100%;
-        z-index: 9999;
-        transition: opacity 1s ease;
-        background-color: var(--cinza);
-        transition: 0.3s ease-in;
+        z-index: -1;
+        transition: none;
+        background-color: transparent;
+        transition: none;
     }
+
+    #number{
+        font-family: sans-serif;
+        font-size: 1.2em;
+    }
+
+    #navid a{
+        display: inline;
+        width: 252px;
+        padding-left: 20px;
+        padding-right: 0px;
+        color: var(--cinza);
+    }
+
+    #home2{
+        height: 350px;
+    }
+
+    #home2 img{
+        width: 300px;
+        top: -55%;
+        left: 60%;
+    }
+
+    .comentario-home2{
+        font-size: 1.5em;
+        width: 300px;
+        margin-left: 200px;
+        padding-top: 30px; 
+    }
+
+    .container-h2-1{
+        text-align: left;
+        margin-top: 30px;
+        margin-left: 175px;
+    }
+
+    #home2-2{
+        text-align: center;
+        padding: 10px;
+        height: 500px;
+        display: flex;
+    }
+    
+    .nav-fotos{
+        width: 50%;
+    }
+    
+    .tipo-coffee{
+        display: inline;
+        margin-left: 0px;
+        float: right;
+        padding-top: 0px;
+    }
+
+    .img-sobre{
+        top: -20%;
+        left: 60%;
+        
+    }
+
+    #contato{
+        height: 130px;
+        padding: 0px 50px;
+    }
+    
+    #pagina{
+        margin: auto;
+        max-width: 1024px;
+    }
+
+}
+
+@media screen and (min-width: 1024) {
+    
 }

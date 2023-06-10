@@ -34,7 +34,6 @@
 }
 
 body{
-    
     width: 100%;
     height: 100vh;
     background: url(../img/fundo.jpg);
@@ -49,16 +48,11 @@ menu{
 }
 
 .logo{
-    flex-direction: column;
-    align-items: center;
-    display: flex;
     padding: 20px;
 }
 
 .logo img{
     width: 200px;
-    display: inline-flex;
-
 }
 
 .burguer{
@@ -79,24 +73,20 @@ menu{
 
 .nav{
     transform: translateY(-100%);
-    display: block;
-    width: 100%;
-    z-index: 9999;
-    transition: opacity 1s ease;
     background-color: var(--cinza);
-    transition: 0.3s ease-in;
+    transition: 0.4s ease-in;
+}
+
+#number{
+    display: none;
 }
 
 .nav a {
-    opacity: 1;
     padding: 10px 0px 10px 0px;
-    display: block;
-    text-decoration: none;
     font-family: 'cake', sans-serif;
     font-size: 2em;
     color: var(--cinzaClaro);
     border-bottom: 1px solid black;
-    background-color: var(--cinza);
     width: 100%;
     transition: 0.3s ease-in;
 
@@ -113,8 +103,10 @@ menu{
 }
 
 .home-class p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-bottom: 20px;
     font-family: sans-serif;
+    letter-spacing: 3px;
 }
 
 #btn-menu1{
@@ -210,7 +202,7 @@ menu{
 #home2-2 img{
     width: 250px;
     border-style: solid;
-    border-image: linear-gradient(to right, black 30%, white ) 1;
+    border-image: linear-gradient(to right, var(--marrom1) 30%, var(--marrom2) ) 1;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.384);
     
 }
@@ -278,18 +270,7 @@ menu{
     text-decoration: none;
 }
 
-#opc-coffee1:hover{
-    text-decoration: underline;
 
-}
-#opc-coffee2:hover{
-    text-decoration: underline;
-
-}
-#opc-coffee3:hover{
-    text-decoration: underline;
-
-}
 
 #sobre{
     padding: 15px;
