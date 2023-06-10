@@ -309,6 +309,7 @@ menu{
 }
 
 #contato ul{
+    text-align: left;
     display: inline-block;
     padding: 20px;
     color: white;
