@@ -21,19 +21,19 @@
     src: url(../fonts/CaviarDreams.ttf);
 }
 
-:root{
-    --marrom1:#523427;
-    --cinza:#303539;
-    --marrom2:#A18369;
-    --cinzaClaro:#DBDBDB;
+:root {
+    --marrom1: #523427;
+    --cinza: #303539;
+    --marrom2: #A18369;
+    --cinzaClaro: #DBDBDB;
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     background: url(../img/fundo.jpg);
@@ -41,22 +41,22 @@ body{
     background-size: contain;
 }
 
-menu{
+menu {
     height: 24px;
     text-align: center;
     transition: 0.3s ease-in;
 }
 
-.logo{
+.logo {
     padding: 20px;
 }
 
-.logo img{
+.logo img {
     width: 200px;
 }
 
-.burguer{
-    padding: 10px 0px 10px 0px ;
+.burguer {
+    padding: 10px 0px 10px 0px;
     cursor: pointer;
     display: block;
     text-decoration: none;
@@ -67,17 +67,17 @@ menu{
     width: 100%;
 }
 
-.container-nav{
+.container-nav {
     overflow-y: hidden;
 }
 
-.nav{
+.nav {
     transform: translateY(-100%);
     background-color: var(--cinza);
-    transition: 0.4s ease-in;
+    transition:  0.4s ease-in;
 }
 
-#number{
+#number {
     display: none;
 }
 
@@ -92,24 +92,29 @@ menu{
 
 }
 
-.home-class{
+.nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.home-class {
     padding: 20px;
     margin-bottom: 150px;
 }
 
-.title{
+.title {
     padding-bottom: 20px;
     font-family: 'title', serif;
 }
 
-.home-class p{
+.home-class p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-bottom: 20px;
     font-family: sans-serif;
     letter-spacing: 3px;
 }
 
-#btn-menu1{
+#btn-menu1 {
     padding: 10px 30px 10px 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--cinza);
@@ -121,27 +126,27 @@ menu{
     cursor: pointer;
 }
 
-#btn-menu1:hover{
+#btn-menu1:hover {
     background: #838386;
 }
 
-#btn-menu1:active{
+#btn-menu1:active {
     transform: translate(2px, 2px);
 }
 
-.name{
-    
+.name {
+
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 3px;
     padding-bottom: 10px;
-    
+
 }
 
-.destaque-marrom{
+.destaque-marrom {
     color: var(--marrom2);
 }
 
-#home2{
+#home2 {
     background-color: var(--cinza);
     width: 100%;
     height: 450px;
@@ -149,22 +154,22 @@ menu{
     box-shadow: 1px -8px 10px rgba(0, 0, 0, 0.281);
 }
 
-#home2 img{
+#home2 img {
     width: 250px;
     position: absolute;
     top: -25%;
     left: 35%;
     z-index: 999;
     border-style: solid;
-    border-image: linear-gradient(to right, black 30%, white ) 1;
+    border-image: linear-gradient(to right, black 30%, white) 1;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.384);
 }
 
-.comentarios{
+.comentarios {
     color: #747475;
 }
 
-.comentario-home2{
+.comentario-home2 {
     font-size: 0.9em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 120px;
@@ -174,100 +179,100 @@ menu{
     text-align: center;
 }
 
-.h2-2-p{
+.h2-2-p {
     padding: 0px 50px;
 
 }
 
-.p-home2{
+.p-home2 {
     font-size: 1.3em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    
+
 }
 
-.container-h2-1{
+.container-h2-1 {
     padding: 20px 15px;
     text-align: center;
     margin-top: 150px;
 }
 
-#home2-2{
+#home2-2 {
     background-color: var(--cinza);
     width: 100%;
     height: 870px;
     text-align: center;
 }
 
-#home2-2 img{
+#home2-2 img {
     width: 250px;
     border-style: solid;
-    border-image: linear-gradient(to right, var(--marrom1) 30%, var(--marrom2) ) 1;
+    border-image: linear-gradient(to right, var(--marrom1) 30%, var(--marrom2)) 1;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.384);
-    
+
 }
 
-#carrossel-img1{
+#carrossel-img1 {
     display: none;
 }
 
-#carrossel-img2{
+#carrossel-img2 {
     display: none;
 }
 
-#carrossel-img3{
+#carrossel-img3 {
     display: inline;
 }
 
-.tipo-coffee{
+.tipo-coffee {
     margin-top: 50px;
 }
 
-.mais-menu{
+.mais-menu {
     color: white;
     font-family: 'padrao', sans-serif;
     text-decoration: underline;
     display: none;
 }
 
-.mais-menu:hover{
+.mais-menu:hover {
     color: #747475;
 }
 
-.escrita-padrao{
+.escrita-padrao {
     color: white;
     font-family: 'padrao', sans-serif;
 }
 
-.lista-coffee li{
+.lista-coffee li {
     font-size: 1.2em;
     padding: 0px 20px;
     display: inline;
 }
 
-.lista-coffee i{
+.lista-coffee i {
     font-size: 0.4em;
     color: #747475;
 }
 
-#opc-coffee1{
+#opc-coffee1 {
     color: var(--marrom2);
     cursor: pointer;
-    font-family: 'title',serif;
+    font-family: 'title', serif;
     text-decoration: none;
 }
 
-#opc-coffee2{
+#opc-coffee2 {
     color: white;
     cursor: pointer;
-    font-family: 'title',serif;
+    font-family: 'title', serif;
     text-decoration: none;
 }
 
-#opc-coffee3{
+#opc-coffee3 {
     color: white;
     cursor: pointer;
-    font-family: 'title',serif;
+    font-family: 'title', serif;
     text-decoration: none;
 }
 
@@ -275,24 +280,24 @@ menu{
 
 
 
-#sobre{
+#sobre {
     padding: 15px;
     text-align: center;
     padding-top: 100px;
     position: relative;
 }
 
-.sobre-txt{
+.sobre-txt {
     color: black;
     font-size: 1.1em;
     padding: 0px 30px;
 }
 
-.sobre-txt-f{
+.sobre-txt-f {
     font-weight: bold;
 }
 
-.img-sobre{
+.img-sobre {
     width: 200px;
     position: absolute;
     top: -9%;
@@ -300,7 +305,7 @@ menu{
     z-index: 999;
 }
 
-#contato{
+#contato {
     padding: 20px;
     background-color: var(--cinza);
     width: 100%;
@@ -308,7 +313,7 @@ menu{
     text-align: center;
 }
 
-#contato ul{
+#contato ul {
     text-align: left;
     display: inline-block;
     padding: 20px;
@@ -317,16 +322,14 @@ menu{
 }
 
 
-footer{
+footer {
     height: 40px;
     text-align: center;
     background-color: black;
     color: white;
 }
+
 footer p {
-    padding-top:10px;
+    padding-top: 10px;
     font-size: 0.75em;
 }
-
-
-

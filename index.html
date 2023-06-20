@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,87 +8,126 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/mediaQuery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
-    <script src="scripts/script.js"></script>
+    <script src="scripts/script.js" defer></script>
     <title>9¾ Coffee</title>
 </head>
+
 <body onresize="mudouTamanho()">
     <div id="pagina">
         <header>
-        
-                <div class="logo">
-                    <img src="img/coffee.png" alt="logo da cafeteria" id="logo-home">
-        
-                </div>
-                <menu id="menu">
-                        <span class="material-symbols-outlined burguer" id="burguer" onclick="navMenu()">
-                            menu
-                            </span>
-        
-                    <div class="container-nav">
-                        <div class="nav" id="navid">
-                            <a href="#home">Home</a>
-                            <a href="">Menu</a>
-                            <a href="#sobre">Sobre</a>
-                            <a href="#contato">Contato</a>
-        
-                        </div>
+
+    <!--Cabeçalho-->
+
+            <div class="logo">
+                <img src="img/coffee.png" alt="logo da cafeteria" id="logo-home">
+
+            </div>
+            <menu id="menu">
+                <span class="material-symbols-outlined burguer" id="burguer" onclick="navMenu()">
+                    menu
+                </span>
+
+                <div class="container-nav">
+                    <div class="nav" id="navid">
+                        <a href="#home">Home</a>
+                        <a href="paginas/menu.html">Menu</a>
+                        <a href="#sobre">Sobre</a>
+                        <a href="#contato">Contato</a>
+
                     </div>
-                </menu>
-        
+                </div>
+            </menu>
+
         </header>
+
+    <!--------------------------------------------------------------------->
+
+    <!--Primeira Parte-->
+
         <div id="home" class="home-class">
-            <p class="name destaque-marrom">9¾ Coffee</p>
+            <p class="name destaque-marrom">DevCoffee</p>
             <h1 class="title">Uma pausa rápida, um café perfeito!</h1>
             <p>Aproveite cada segundo na nossa cafeteria!</p>
             <div style="text-align: center; width: 70%;">
-                <button id="btn-menu1">Menu</button>
+                <a href="paginas/menu.html"><button id="btn-menu1">Menu</button></a>
             </div>
         </div>
         <div id="home2">
             <img src="img/coffee1.jpg" alt="xicara de café">
             <p class="comentarios comentario-home2">Aproveite um café mesmo na correria do dia a dia</p>
             <div class="container-h2-1">
-                <p class="destaque-marrom" style="display: inline; font-size: 1.5em;">+</p><p class="p-home2" style="display: inline; padding-right: 60px;"> Agilidade</p>
-        
-                <p class="destaque-marrom" style="display: inline; font-size: 1.5em;">+</p><p class="p-home2" style="display: inline; "> Qualidade</p>
+                <p class="destaque-marrom" style="display: inline; font-size: 1.5em;">+</p>
+                <p class="p-home2" style="display: inline; padding-right: 60px;"> Agilidade</p>
+
+                <p class="destaque-marrom" style="display: inline; font-size: 1.5em;">+</p>
+                <p class="p-home2" style="display: inline; "> Qualidade</p>
             </div>
         </div>
+
+    <!--------------------------------------------------------------------->
+
+    <!--Carrossel de itens-->
+
         <div id="home2-2">
             <div class="nav-fotos">
-                <i class="fa-solid fa-caret-left" style="color: white; padding-right: 50px; cursor: pointer;" id="left" onclick="cliqueEsquerda()"></i>
+                <i class="fa-solid fa-caret-left" style="color: white; padding-right: 50px; cursor: pointer;" id="left"
+                    onclick="cliqueEsquerda()"></i>
                 <img class="carrossel-img" id="carrossel-img1" src="./img/coffee2.jpg" alt="">
                 <img class="carrossel-img" id="carrossel-img2" src="./img/coffee3.jpg" alt="">
                 <img class="carrossel-img" id="carrossel-img3" src="./img/coffee4.jpg" alt="">
-                <i class="fa-solid fa-caret-right" style="color: white; padding-left: 50px; cursor: pointer;" id="right" onclick="cliqueDireita()"></i>
+                <i class="fa-solid fa-caret-right" style="color: white; padding-left: 50px; cursor: pointer;" id="right"
+                    onclick="cliqueDireita()"></i>
             </div>
             <div class="tipo-coffee">
                 <p class="name destaque-marrom">Nosso café</p>
                 <h1 class="title" style="color: white;">Escolha seu café favorito</h1>
-                <p class="escrita-padrao h2-2-p">Mais de 10+ tipos de café estão prontos para serem servidos por nossos profissionais.</p>
+                <p class="escrita-padrao h2-2-p">Mais de 10+ tipos de café estão prontos para serem servidos por nossos
+                    profissionais.</p>
                 <ul class="lista-coffee">
-                    <li ><a class="opc-coffee" id="opc-coffee1" onclick="expressoClick()">Expresso</a></li>
-        
+                    <li><a class="opc-coffee" id="opc-coffee1" onclick="expressoClick()">Expresso</a></li>
+
                     <sup><i class="fa-solid fa-circle"></i></sup>
-                    <li ><a class="opc-coffee" id="opc-coffee2" onclick="cappucinoClick()">Cappucino</a></li>
+                    <li><a class="opc-coffee" id="opc-coffee2" onclick="cappucinoClick()">Cappucino</a></li>
                     <sup><i class="fa-solid fa-circle"></i></sup>
-                    <li ><a class="opc-coffee" id="opc-coffee3" onclick="arabicaClick()">Arabica</a></li>
+                    <li><a class="opc-coffee" id="opc-coffee3" onclick="arabicaClick()">Arabica</a></li>
                 </ul>
-                <a href="#" class="mais-menu">Mais menu</a>
-        
+                <a href="paginas/menu.html" class="mais-menu">Mais menu</a>
+
             </div>
+
+    <!--------------------------------------------------------------------->
+
+    <!--Sobre-->
+
         </div>
         <div id="sobre">
             <img src="img/cop.png" alt="copo de café descartavel" class="img-sobre">
             <h1 class="title">Sobre nós</h1>
-            <p class="name sobre-txt">Somos apaixonados por oferecer uma experiência única e saborosa para todos os amantes de café, especialmente para aqueles que estão sempre em movimento. Sabemos que em um mundo acelerado, cada minuto conta. É por isso que nos dedicamos a proporcionar um atendimento ágil e eficiente, para que você possa desfrutar do melhor café sem comprometer seu precioso tempo.
-            Nossos produtos são cuidadosamente selecionados, priorizando sempre a qualidade e o sabor excepcionais. Trabalhamos com grãos de café provenientes das melhores fazendas, garantindo uma bebida que encanta os paladares mais exigentes. Além disso, nossa equipe é treinada para preparar cada xícara com perfeição, proporcionando uma explosão de aromas e sabores que despertam seus sentidos. Mesmo que esteja com pressa. Criamos um ambiente acolhedor e convidativo, onde você pode se sentir em casa e recarregar suas energias enquanto aprecia um café delicioso.</p>
-                <p class="name sobre-txt sobre-txt-f">Estamos ansiosos para recebê-lo em nosso Food Truck Café, onde a agilidade no atendimento se une a produtos de alta qualidade e a um ambiente acolhedor.</p>
+            <p class="name sobre-txt">Somos apaixonados por oferecer uma experiência única e saborosa para todos os
+                amantes de café, especialmente para aqueles que estão sempre em movimento. Sabemos que em um mundo
+                acelerado, cada minuto conta. É por isso que nos dedicamos a proporcionar um atendimento ágil e
+                eficiente, para que você possa desfrutar do melhor café sem comprometer seu precioso tempo.
+                Nossos produtos são cuidadosamente selecionados, priorizando sempre a qualidade e o sabor excepcionais.
+                Trabalhamos com grãos de café provenientes das melhores fazendas, garantindo uma bebida que encanta os
+                paladares mais exigentes. Além disso, nossa equipe é treinada para preparar cada xícara com perfeição,
+                proporcionando uma explosão de aromas e sabores que despertam seus sentidos. Mesmo que esteja com
+                pressa. Criamos um ambiente acolhedor e convidativo, onde você pode se sentir em casa e recarregar suas
+                energias enquanto aprecia um café delicioso.</p>
+            <p class="name sobre-txt sobre-txt-f">Estamos ansiosos para recebê-lo em nosso Food Truck Café, onde a
+                agilidade no atendimento se une a produtos de alta qualidade e a um ambiente acolhedor.</p>
         </div>
-        
+
     </div>
+
+    <!--------------------------------------------------------------------->
+
+    <!--Contato-->
+
     <div id="contato">
         <ul>
             <li class="title-list">Telefones</li>
@@ -97,19 +137,25 @@
         </ul>
         <ul>
             <li class="title-list">Emails</li>
-            <li>contato@9¾coffee.com</li>
-            <li>atendimento@9¾coffee.com</li>
-            <li>vendas@9¾coffee.com</li>
+            <li>contato@devcoffee.com</li>
+            <li>atendimento@devcoffee.com</li>
+            <li>vendas@devcoffee.com</li>
         </ul>
         <ul>
             <li class="title-list">Suporte</li>
             <li>Política de Privacidade</li>
             <li>Ajuda</li>
-    
+
         </ul>
     </div>
-        
-    
-    <footer><p>©2023 Gabriel Seidel Nunes para UNIVALI</p></footer>
+
+    <!--------------------------------------------------------------------->
+
+
+
+    <footer>
+        <p>©2023 Gabriel Seidel Nunes para UNIVALI</p>
+    </footer>
 </body>
+
 </html>

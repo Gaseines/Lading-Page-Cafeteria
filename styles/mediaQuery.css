@@ -8,6 +8,8 @@
 }
 
 @media screen and (min-width: 610px) {
+    
+
     #burguer{
         display: none;
     }
@@ -24,7 +26,6 @@
     }
 
     menu{
-        text-align: center;
         transition: none;
         display: inline;
     }
@@ -35,7 +36,8 @@
 
     .nav{
         transform: translateY(0%);
-        display: inline;
+        display: block;
+        justify-content: center;
         width: 100%;
         z-index: -1;
         transition: none;
@@ -117,8 +119,23 @@
         max-width: 1024px;
     }
 
-}
 
-@media screen and (min-width: 1024) {
+    /*                                MENU                                  */
+
+
+    .container-item {
+        margin-top: 50px;
+        background-color: var(--cinza);
+        padding: 20px;
+        border-radius: 3% 20% ;
+        box-shadow: 1px 5px 10px black;
+        border: 1px solid rgba(0, 0, 0, 0.582);
+    }
+
+    .descricao{
+        width: 400px;
+        margin-left: 275px;
+    }
     
 }
+
