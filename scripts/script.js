@@ -1,10 +1,37 @@
 
 function mudouTamanho(){
     const itens = document.getElementById('navid')
+    let menuDesc = document.querySelectorAll('.descricao')
+    let btnDesc = document.querySelectorAll('.desc-btn')
+
+
     if(window.innerWidth >= 610){
         itens.style.transform = 'translateY(0%)'
+        
+
+        for(let i = 0; i < menuDesc.length; i++){
+            menuDesc[i].style.transform = 'translateY(0%)'
+            menuDesc[i].style.height = '50px'
+        } 
+
+        for(let j = 0; j < btnDesc.length; j++){
+            btnDesc[j].style.display = 'none'
+        } 
+        
+
     }else{
         itens.style.transform = 'translateY(-100%)'
+        
+        
+        for(let i = 0; i < menuDesc.length; i++){
+            menuDesc[i].style.transform = 'translateY(-1000%)'
+            menuDesc[i].style.height = '10px'
+        } 
+
+        for(let j = 0; j < btnDesc.length; j++){
+            btnDesc[j].style.display = 'block'
+        }
+
     }
 }
 
