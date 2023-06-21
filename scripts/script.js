@@ -187,3 +187,18 @@ function arabicaClick(){
     }
 }
 
+function carregamento(){
+    const load = document.getElementById('load')
+    const cont = document.getElementById('paginas')
+
+    cont.style.display = 'none'
+    
+
+    setTimeout(() =>{
+        load.style.display = 'none'
+        cont.style.display = 'block'
+    }, 2300)
+    
+    
+  }
+

@@ -15,247 +15,253 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../styles/load.css">
     <script src="../scripts/scriptMenu.js" defer></script>
     <script src="../scripts/script.js"></script>
     <link rel="shortcut icon" href="../icon/coffee-break (1).png" type="image/x-icon">
     <title>Menu</title>
 </head>
 
-<body onresize="mudouTamanho()">
-    <div id="pagina">
-        <header>
-            <a href="../index.html" class="logo">
-                <img  src="../img/coffee.png" alt="logo da cafeteria" id="logo-home">
-            </a>
-            <menu id="menu">
-                <span class="material-symbols-outlined burguer" id="burguer" onclick="navMenu()">
-                    menu
-                </span>
-                <div class="container-nav">
-                    <div class="nav" id="navid">
-                        <a href="../index.html">Home</a>
-                        <a href="#contato">Contato</a>
-                    </div>
-                </div>
-            </menu>
-        </header>
-        <div id="container-menu">
-            <h1>Menu</h1>
+<body onresize="mudouTamanho()" onload="carregamento()">
 
-            <!----------------------------------1----------------------------------->
-
-            <div class="container-item fundo-cinza">
-                <div class="item-p1">
-                    <img src="../img/cop.png" alt="">
-                    <h2 class="prod">Café Expresso</h2>
-                    <p class="preco">R$4,50</p>
-                </div>
-                <p class="desc-btn" id="btn-desc-1">Um café forte e...  <i onclick="down1()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
-                <div id="container-desc">
-                    <p class="descricao" id="desc1">Um café forte e encorpado preparado com grãos de alta qualidade.  <i onclick="up1()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
-                    <div class="container-btn">
-                        <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
-                </div>
-                </div>
+    <div id="load">
+        <div class="preloader">
+            <svg class="cart" role="img" aria-label="Shopping cart line animation" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+                    <g class="cart__track" stroke="hsla(0,10%,10%,0.1)">
+                        <polyline points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" />
+                        <circle cx="43" cy="111" r="13" />
+                        <circle cx="102" cy="111" r="13" />
+                    </g>
+                    <g class="cart__lines" stroke="currentColor">
+                        <polyline class="cart__top" points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" stroke-dasharray="338 338" stroke-dashoffset="-338" />
+                        <g class="cart__wheel1" transform="rotate(-90,43,111)">
+                            <circle class="cart__wheel-stroke" cx="43" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+                        </g>
+                        <g class="cart__wheel2" transform="rotate(90,102,111)">
+                            <circle class="cart__wheel-stroke" cx="102" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <div class="preloader__text">
+                <p class="preloader__msg"><b style="font-family: sans-serif; font-size: 0.5em; padding: 5px;">®</b>DevCoffee</p>
             </div>
-
-            <!----------------------------------2----------------------------------->
-
-            <div class="container-item fundo-marrom">
-                <div class="item-p1">
-                    <img src="../img/cop.png" alt="">
-                    <h2 class="prod">Café Latte</h2>
-                    <p class="preco">R$11,50</p>
-                </div>
-                <p class="desc-btn" id="btn-desc-2">Uma deliciosa mistura de...  <i onclick="down2()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
-                <div id="container-desc">
-                    <p class="descricao" id="desc2">Uma deliciosa mistura de café expresso, leite vaporizado e espuma de leite, polvilhada com cacau em pó.  <i onclick="up2()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
-                    <div class="container-btn">
-                        <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
-                </div>
-                </div>
-            </div>
-
-            <!---------------------------------3------------------------------------>
-
-            <div class="container-item fundo-cinza">
-                <div class="item-p1">
-                    <img src="../img/cop.png" alt="">
-                    <h2 class="prod" style="font-size: 1.8em;">Cappuccino Tradicional</h2>
-                    <p class="preco">R$5,50</p>
-                </div>
-                <p class="desc-btn" id="btn-desc-3">Uma deliciosa mistura de...  <i onclick="down3()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
-                <div id="container-desc">
-                    <p class="descricao" id="desc3">Uma deliciosa mistura de café expresso, leite vaporizado e espuma de leite, polvilhada com cacau em pó.  <i onclick="up3()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
-                    <div class="container-btn">
-                        <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
-                </div>
-                </div>
-            </div>
-
-            <!----------------------------------4----------------------------------->
-
-            <div class="container-item fundo-marrom">
-                <div class="item-p1">
-                    <img src="../img/cop.png" alt="">
-                    <h2 class="prod">Café Mocha</h2>
-                    <p class="preco">R$12,00</p>
-                </div>
-                <p class="desc-btn" id="btn-desc-4">Uma tentadora mistura de...  <i onclick="down4()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
-                <div id="container-desc">
-                    <p class="descricao" id="desc4">Uma tentadora mistura de café expresso, chocolate quente e leite vaporizado, coberto com chantilly e raspas de chocolate.  <i onclick="up4()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
-                    <div class="container-btn">
-                        <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
-                </div>
-                </div>
-            </div>
-
-            <!---------------------------------5------------------------------------>
-
-            <div class="container-item fundo-cinza">
-                <div class="item-p1">
-                    <img src="../img/cop.png" alt="">
-                    <h2 class="prod">Café Macchiato</h2>
-                    <p class="preco">R$10,00</p>
-                </div>
-                <p class="desc-btn" id="btn-desc-5">Uma dose de café expres...  <i onclick="down5()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
-                <div id="container-desc">
-                    <p class="descricao" id="desc5">Uma dose de café expresso marcada por uma pequena quantidade de leite vaporizado.  <i onclick="up5()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
-                    <div class="container-btn">
-                        <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
-                </div>
-                </div>
-            </div>
-
-            <!--------------------------------6------------------------------------->
-
-            <div class="container-item fundo-marrom">
-                <div class="item-p1">
-                    <img src="../img/cop.png" alt="">
-                    <h2 class="prod">Café Americano</h2>
-                    <p class="preco">R$9,00</p>
-                </div>
-                <p class="desc-btn" id="btn-desc-6">Um café expresso dilu...  <i onclick="down6()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
-                <div id="container-desc">
-                    <p class="descricao" id="desc6">Um café expresso diluído em água quente, criando uma bebida mais leve.  <i onclick="up6()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
-                    <div class="container-btn">
-                        <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
-                </div>
-                </div>
-            </div>
-
-            <!----------------------------------7----------------------------------->
-
-            <div class="container-item fundo-cinza">
-                <div class="item-p1">
-                    <img src="../img/cop.png" alt="">
-                    <h2 class="prod">Café Dalgona</h2>
-                    <p class="preco">R$12,50</p>
-                </div>
-                <p class="desc-btn" id="btn-desc-7">Uma versão deliciosa do...  <i onclick="down7()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
-                <div id="container-desc">
-                    <p class="descricao" id="desc7">Uma versão deliciosa do café gelado, com uma camada cremosa de café batido, leite e cubos de gelo.  <i onclick="up7()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
-                    <div class="container-btn">
-                        <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
-                </div>
-                </div>
-            </div>
-
-            <!-----------------------------------8---------------------------------->
-
-            <div class="container-item fundo-marrom">
-                <div class="item-p1">
-                    <img src="../img/cop.png" alt="">
-                    <h2 class="prod">Café Affogato</h2>
-                    <p class="preco">R$13,50</p>
-                </div>
-                <p class="desc-btn" id="btn-desc-8">Uma sobremesa divina que...  <i onclick="down8()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
-                <div id="container-desc">
-                    <p class="descricao" id="desc8">Uma sobremesa divina que combina uma bola de sorvete de baunilha com uma dose de café expresso quente.  <i onclick="up8()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
-                    <div class="container-btn">
-                        <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
-                </div>
-                </div>
-            </div>
-
-            <!----------------------------------9----------------------------------->
-
-            <div class="container-item fundo-cinza">
-                <div class="item-p1">
-                    <img src="../img/cop.png" alt="">
-                    <h2 class="prod" style="font-size: 1.8em;">Café com Especiarias</h2>
-                    <p class="preco">R$10,50</p>
-                </div>
-                <p class="desc-btn" id="btn-desc-9">Uma mistura de café expres...  <i onclick="down9()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
-                <div id="container-desc">
-                    <p class="descricao" id="desc9">Uma mistura de café expresso com especiarias como canela, cravo e noz-moscada, criando um sabor único.  <i onclick="up9()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
-                    <div class="container-btn">
-                        <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
-                </div>
-                </div>
-            </div>
-
-            <!--------------------------------10------------------------------------->
-
-            <div class="container-item fundo-marrom">
-                <div class="item-p1">
-                    <img src="../img/cop.png" alt="">
-                    <h2 class="prod">Café Vienense</h2>
-                    <p class="preco">R$11,00</p>
-                </div>
-                <p class="desc-btn" id="btn-desc-10">Uma combinação de café expres...  <i onclick="down10()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
-                <div id="container-desc">
-                    <p class="descricao" id="desc10">Uma combinação de café expresso, leite vaporizado, chantilly e uma pitada de chocolate em pó.  <i onclick="up10()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
-                    <div class="container-btn">
-                        <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
-                </div>
-                </div>
-            </div>
-
-            <!--------------------------------------------------------------------->
-
-            <div class="container-item fundo-cinza">
-                <div class="item-p1">
-                    <img src="../img/cop.png" alt="">
-                    <h2 class="prod">Café Frappé</h2>
-                    <p class="preco">R$12,00</p>
-                </div>
-                <p class="desc-btn" id="btn-desc-11">Um café gelado batido com...  <i onclick="down11()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
-                <div id="container-desc">
-                    <p class="descricao" id="desc11">Um café gelado batido com leite, açúcar e cubos de gelo, resultando em uma bebida refrescante e energizante.  <i onclick="up11()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
-                    <div class="container-btn">
-                        <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
-                </div>
-                </div>
-            </div>
-
-            <!--------------------------------------------------------------------->
-
         </div>
     </div>
-    <div id="contato">
-        <ul>
-            <li class="title-list">Telefones</li>
-            <li>(47) 1234-5678</li>
-            <li>(47) 98765-4321</li>
-            <li>(47) 54321-9876</li>
-        </ul>
-        <ul>
-            <li class="title-list">Emails</li>
-            <li>contato@devcoffee.com</li>
-            <li>atendimento@devcoffee.com</li>
-            <li>vendas@devcoffee.com</li>
-        </ul>
-        <ul>
-            <li class="title-list">Suporte</li>
-            <li>Política de Privacidade</li>
-            <li>Ajuda</li>
 
-        </ul>
+
+    <div id="paginas">
+        <div id="pagina">
+            <header>
+                <a href="../index.html" class="logo">
+                    <img  src="../img/coffee.png" alt="logo da cafeteria" id="logo-home">
+                </a>
+                <menu id="menu">
+                    <span class="material-symbols-outlined burguer" id="burguer" onclick="navMenu()">
+                        menu
+                    </span>
+                    <div class="container-nav">
+                        <div class="nav" id="navid">
+                            <a href="../index.html">Home</a>
+                            <a href="#contato">Contato</a>
+                        </div>
+                    </div>
+                </menu>
+            </header>
+            <div id="container-menu">
+                <h1>Menu</h1>
+                <!----------------------------------1----------------------------------->
+                <div class="container-item fundo-cinza">
+                    <div class="item-p1">
+                        <img src="../img/cop.png" alt="">
+                        <h2 class="prod">Café Expresso</h2>
+                        <p class="preco">R$4,50</p>
+                    </div>
+                    <p class="desc-btn" id="btn-desc-1">Um café forte e...  <i onclick="down1()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
+                    <div id="container-desc">
+                        <p class="descricao" id="desc1">Um café forte e encorpado preparado com grãos de alta qualidade.  <i onclick="up1()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
+                        <div class="container-btn">
+                            <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
+                    </div>
+                    </div>
+                </div>
+                <!----------------------------------2----------------------------------->
+                <div class="container-item fundo-marrom">
+                    <div class="item-p1">
+                        <img src="../img/cop.png" alt="">
+                        <h2 class="prod">Café Latte</h2>
+                        <p class="preco">R$11,50</p>
+                    </div>
+                    <p class="desc-btn" id="btn-desc-2">Uma deliciosa mistura de...  <i onclick="down2()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
+                    <div id="container-desc">
+                        <p class="descricao" id="desc2">Uma deliciosa mistura de café expresso, leite vaporizado e espuma de leite, polvilhada com cacau em pó.  <i onclick="up2()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
+                        <div class="container-btn">
+                            <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
+                    </div>
+                    </div>
+                </div>
+                <!---------------------------------3------------------------------------>
+                <div class="container-item fundo-cinza">
+                    <div class="item-p1">
+                        <img src="../img/cop.png" alt="">
+                        <h2 class="prod" style="font-size: 1.8em;">Cappuccino Tradicional</h2>
+                        <p class="preco">R$5,50</p>
+                    </div>
+                    <p class="desc-btn" id="btn-desc-3">Uma deliciosa mistura de...  <i onclick="down3()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
+                    <div id="container-desc">
+                        <p class="descricao" id="desc3">Uma deliciosa mistura de café expresso, leite vaporizado e espuma de leite, polvilhada com cacau em pó.  <i onclick="up3()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
+                        <div class="container-btn">
+                            <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
+                    </div>
+                    </div>
+                </div>
+                <!----------------------------------4----------------------------------->
+                <div class="container-item fundo-marrom">
+                    <div class="item-p1">
+                        <img src="../img/cop.png" alt="">
+                        <h2 class="prod">Café Mocha</h2>
+                        <p class="preco">R$12,00</p>
+                    </div>
+                    <p class="desc-btn" id="btn-desc-4">Uma tentadora mistura de...  <i onclick="down4()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
+                    <div id="container-desc">
+                        <p class="descricao" id="desc4">Uma tentadora mistura de café expresso, chocolate quente e leite vaporizado, coberto com chantilly e raspas de chocolate.  <i onclick="up4()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
+                        <div class="container-btn">
+                            <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
+                    </div>
+                    </div>
+                </div>
+                <!---------------------------------5------------------------------------>
+                <div class="container-item fundo-cinza">
+                    <div class="item-p1">
+                        <img src="../img/cop.png" alt="">
+                        <h2 class="prod">Café Macchiato</h2>
+                        <p class="preco">R$10,00</p>
+                    </div>
+                    <p class="desc-btn" id="btn-desc-5">Uma dose de café expres...  <i onclick="down5()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
+                    <div id="container-desc">
+                        <p class="descricao" id="desc5">Uma dose de café expresso marcada por uma pequena quantidade de leite vaporizado.  <i onclick="up5()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
+                        <div class="container-btn">
+                            <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
+                    </div>
+                    </div>
+                </div>
+                <!--------------------------------6------------------------------------->
+                <div class="container-item fundo-marrom">
+                    <div class="item-p1">
+                        <img src="../img/cop.png" alt="">
+                        <h2 class="prod">Café Americano</h2>
+                        <p class="preco">R$9,00</p>
+                    </div>
+                    <p class="desc-btn" id="btn-desc-6">Um café expresso dilu...  <i onclick="down6()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
+                    <div id="container-desc">
+                        <p class="descricao" id="desc6">Um café expresso diluído em água quente, criando uma bebida mais leve.  <i onclick="up6()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
+                        <div class="container-btn">
+                            <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
+                    </div>
+                    </div>
+                </div>
+                <!----------------------------------7----------------------------------->
+                <div class="container-item fundo-cinza">
+                    <div class="item-p1">
+                        <img src="../img/cop.png" alt="">
+                        <h2 class="prod">Café Dalgona</h2>
+                        <p class="preco">R$12,50</p>
+                    </div>
+                    <p class="desc-btn" id="btn-desc-7">Uma versão deliciosa do...  <i onclick="down7()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
+                    <div id="container-desc">
+                        <p class="descricao" id="desc7">Uma versão deliciosa do café gelado, com uma camada cremosa de café batido, leite e cubos de gelo.  <i onclick="up7()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
+                        <div class="container-btn">
+                            <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
+                    </div>
+                    </div>
+                </div>
+                <!-----------------------------------8---------------------------------->
+                <div class="container-item fundo-marrom">
+                    <div class="item-p1">
+                        <img src="../img/cop.png" alt="">
+                        <h2 class="prod">Café Affogato</h2>
+                        <p class="preco">R$13,50</p>
+                    </div>
+                    <p class="desc-btn" id="btn-desc-8">Uma sobremesa divina que...  <i onclick="down8()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
+                    <div id="container-desc">
+                        <p class="descricao" id="desc8">Uma sobremesa divina que combina uma bola de sorvete de baunilha com uma dose de café expresso quente.  <i onclick="up8()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
+                        <div class="container-btn">
+                            <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
+                    </div>
+                    </div>
+                </div>
+                <!----------------------------------9----------------------------------->
+                <div class="container-item fundo-cinza">
+                    <div class="item-p1">
+                        <img src="../img/cop.png" alt="">
+                        <h2 class="prod" style="font-size: 1.8em;">Café com Especiarias</h2>
+                        <p class="preco">R$10,50</p>
+                    </div>
+                    <p class="desc-btn" id="btn-desc-9">Uma mistura de café expres...  <i onclick="down9()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
+                    <div id="container-desc">
+                        <p class="descricao" id="desc9">Uma mistura de café expresso com especiarias como canela, cravo e noz-moscada, criando um sabor único.  <i onclick="up9()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
+                        <div class="container-btn">
+                            <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
+                    </div>
+                    </div>
+                </div>
+                <!--------------------------------10------------------------------------->
+                <div class="container-item fundo-marrom">
+                    <div class="item-p1">
+                        <img src="../img/cop.png" alt="">
+                        <h2 class="prod">Café Vienense</h2>
+                        <p class="preco">R$11,00</p>
+                    </div>
+                    <p class="desc-btn" id="btn-desc-10">Uma combinação de café expres...  <i onclick="down10()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
+                    <div id="container-desc">
+                        <p class="descricao" id="desc10">Uma combinação de café expresso, leite vaporizado, chantilly e uma pitada de chocolate em pó.  <i onclick="up10()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
+                        <div class="container-btn">
+                            <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
+                    </div>
+                    </div>
+                </div>
+                <!--------------------------------------------------------------------->
+                <div class="container-item fundo-cinza">
+                    <div class="item-p1">
+                        <img src="../img/cop.png" alt="">
+                        <h2 class="prod">Café Frappé</h2>
+                        <p class="preco">R$12,00</p>
+                    </div>
+                    <p class="desc-btn" id="btn-desc-11">Um café gelado batido com...  <i onclick="down11()" style="cursor: pointer;" class="fa-solid fa-chevron-down"></i></p>
+                    <div id="container-desc">
+                        <p class="descricao" id="desc11">Um café gelado batido com leite, açúcar e cubos de gelo, resultando em uma bebida refrescante e energizante.  <i onclick="up11()" style="cursor: pointer;" class="icon fa-solid fa-chevron-up"></i></p>
+                        <div class="container-btn">
+                            <button class="btn-comprar">Comprar  <i class="fa-solid fa-mug-hot"></i></button>
+                    </div>
+                    </div>
+                </div>
+                <!--------------------------------------------------------------------->
+            </div>
+        </div>
+        <div id="contato">
+            <ul>
+                <li class="title-list">Telefones</li>
+                <li>(47) 1234-5678</li>
+                <li>(47) 98765-4321</li>
+                <li>(47) 54321-9876</li>
+            </ul>
+            <ul>
+                <li class="title-list">Emails</li>
+                <li>contato@devcoffee.com</li>
+                <li>atendimento@devcoffee.com</li>
+                <li>vendas@devcoffee.com</li>
+            </ul>
+            <ul>
+                <li class="title-list">Suporte</li>
+                <li>Política de Privacidade</li>
+                <li>Ajuda</li>
+            </ul>
+        </div>
+        <footer>
+            <p>©2023 Gabriel Seidel Nunes para UNIVALI</p>
+        </footer>
     </div>
-    <footer>
-        <p>©2023 Gabriel Seidel Nunes para UNIVALI</p>
-    </footer>
 </body>
 
 </html>

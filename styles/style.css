@@ -41,6 +41,13 @@ body {
     background-size: contain;
 }
 
+#paginas{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
 menu {
     height: 24px;
     text-align: center;
