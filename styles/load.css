@@ -40,6 +40,7 @@ body {
     color: #303539;
     font-family: 'cake', serif;
     font-size: 3.5em;
+    margin-left: -20px;
 }
 .preloader__msg--last {
 	animation-direction: reverse;
@@ -48,9 +49,9 @@ body {
 }
 .cart {
 	display: block;
-	margin: 0 auto 1.5em auto;
 	width: 10em;
 	height: 10em;
+    
 }
 .cart__lines,
 .cart__top,
