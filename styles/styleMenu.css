@@ -53,10 +53,17 @@
     align-items: center;
 }
 
+.preco{
+    color: white;
+    font-size: 1.5em;
+    border-bottom: 1px solid white;
+}
+
 .prod {
     color: white;
     font-family: 'title', serif;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .desc-btn {
@@ -98,3 +105,12 @@
     transform: translate(2px, 2px);
     border: none;
 }
+
+.fundo-marrom{
+        background-image: linear-gradient(to right bottom, var(--cinza) 40%, var(--marrom2));
+}
+
+.fundo-cinza{
+    background-image: linear-gradient(to right bottom, var(--marrom2) , var(--cinza));
+}
+

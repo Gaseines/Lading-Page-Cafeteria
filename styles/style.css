@@ -49,6 +49,7 @@ menu {
 
 .logo {
     padding: 20px;
+    cursor: pointer;
 }
 
 .logo img {
