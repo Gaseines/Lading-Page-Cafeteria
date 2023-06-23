@@ -45,6 +45,11 @@ body {
     display: none;
 }
 
+#menu-tela{
+    margin: auto;
+    max-width: 1024px;
+}
+
 
 menu {
     height: 24px;
