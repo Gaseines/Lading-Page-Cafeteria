@@ -36,6 +36,7 @@
 }
 
 .container-item {
+    width: 396px;
     margin-top: 50px;
     background-color: var(--cinza);
     padding: 10px;
