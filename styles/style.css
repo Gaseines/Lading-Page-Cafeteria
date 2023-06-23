@@ -23,7 +23,7 @@
 
 :root {
     --marrom1: #523427;
-    --cinza: #303539;
+    --cinza: rgb(48, 53, 57);
     --marrom2: #A18369;
     --cinzaClaro: #DBDBDB;
 }
