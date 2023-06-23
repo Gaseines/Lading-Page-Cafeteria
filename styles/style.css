@@ -212,6 +212,7 @@ menu {
 
 #home2-2 img {
     width: 250px;
+    margin-top: 10px;
     border-style: solid;
     border-image: linear-gradient(to right, var(--marrom1) 30%, var(--marrom2)) 1;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.384);
@@ -306,7 +307,7 @@ menu {
 .img-sobre {
     width: 200px;
     position: absolute;
-    top: -9%;
+    top: -11%;
     left: 28%;
     z-index: 999;
 }

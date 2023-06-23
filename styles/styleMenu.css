@@ -24,6 +24,8 @@
 }
 
 #container-menu {
+    position: relative;
+    
     text-align: center;
     padding: 9px;
 }
@@ -36,7 +38,7 @@
 .container-item {
     margin-top: 50px;
     background-color: var(--cinza);
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 1px 5px 10px black;
     border: 1px solid rgba(0, 0, 0, 0.582);

@@ -9,7 +9,10 @@
 
 @media screen and (min-width: 710px) {
 
-
+    #paginas{
+        width: 100%;
+        display: none;
+    }
     
 
     #burguer {
@@ -126,6 +129,7 @@
 
 
     .container-item {
+        width: 100%;
         margin-top: 50px;
         margin-bottom: 100px;
         background-color: var(--cinza);
@@ -188,4 +192,32 @@
         color: transparent;
     }
 
+}
+
+@media screen and (max-width: 413px){
+    #home2 img{
+        width: 200px;
+    }
+
+    #home2-2 img{
+        width: 200px;
+    }
+
+    .lista-coffee li{
+        padding: 0px 10px;
+    }
+
+    .img-sobre{
+        top: -8%;
+        left: 24%;
+    }
+
+    .container-item{
+        width: 343px;
+    }
+
+    .item-p1{
+        
+        flex-direction: column;
+    }
 }
